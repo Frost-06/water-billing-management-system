@@ -8,7 +8,7 @@ The proposed system is a C# Windows Application. The purpose of the project is t
 
 ## Scope
     The Windows Application is capable of the following:
-        **Admin Side:**
+        Admin Side:
                     1.	Create User Account
                     2.	Log In Account
                     3.	Manage Resident List
@@ -23,7 +23,7 @@ The proposed system is a C# Windows Application. The purpose of the project is t
                   5.	Print Billing Statement
                   6.	Email Billing Statement
         
-       **Resident Side:**
+       Resident Side:
                    1.	View Billing Statement
                     
                     Includes the following:

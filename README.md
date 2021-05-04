@@ -35,7 +35,10 @@ The proposed system is a C# Windows Application. The purpose of the project is t
 
 
 # Sample Output
-![Image 1](hhttps://github.com/Frost-06/water-billing-management-system/blob/master/output/login.jpg)
-![Image 2](https://github.com/Frost-06/water-billing-management-system/blob/master/output/registration.jpg)
-![Image 3](https://github.com/Frost-06/water-billing-management-system/blob/master/output/admin-login.jpg)
+![Image 1](https://github.com/Frost-06/water-billing-management-system/blob/master/output/user-billing-statement.jpg)
+![Image 2](https://github.com/Frost-06/water-billing-management-system/blob/master/output/user-dashboard.jpg)
+![Image 3](https://github.com/Frost-06/water-billing-management-system/blob/master/output/admin-monthly-report.jpg)
 ![Image 4](https://github.com/Frost-06/water-billing-management-system/blob/master/output/admin-dashboard.jpg)
+
+*continue viewing the sample output*
+[click here!](https://github.com/Frost-06/water-billing-management-system/tree/master/output/)

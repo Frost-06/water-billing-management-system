@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A768B6EF-CBD3-4D9A-84C0-71C4A0248FBC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Aquatric2</RootNamespace>
+    <AssemblyName>Aquatric2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Desktop\Guna\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Desktop\Guna\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator Dashboard.Designer.cs">
+      <DependentUpon>Administrator Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_AdvancePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_AdvancePayment.Designer.cs">
+      <DependentUpon>AdminSide_AdvancePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_Billing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_Billing.Designer.cs">
+      <DependentUpon>AdminSide_Billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_Billing1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_Billing1.Designer.cs">
+      <DependentUpon>AdminSide_Billing1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_Billing2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_Billing2.Designer.cs">
+      <DependentUpon>AdminSide_Billing2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_Complaints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_Complaints.Designer.cs">
+      <DependentUpon>AdminSide_Complaints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_DailyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_DailyReport.Designer.cs">
+      <DependentUpon>AdminSide_DailyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_DailyReport1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_DailyReport1.Designer.cs">
+      <DependentUpon>AdminSide_DailyReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_Dashboard.Designer.cs">
+      <DependentUpon>AdminSide_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_ManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_ManageUsers.Designer.cs">
+      <DependentUpon>AdminSide_ManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_MonthlyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_MonthlyReport.Designer.cs">
+      <DependentUpon>AdminSide_MonthlyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_Payment.Designer.cs">
+      <DependentUpon>AdminSide_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_SendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_SendEmail.Designer.cs">
+      <DependentUpon>AdminSide_SendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_UserReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_UserReport.Designer.cs">
+      <DependentUpon>AdminSide_UserReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_UserReport1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_UserReport1.Designer.cs">
+      <DependentUpon>AdminSide_UserReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide_UserReport2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSide_UserReport2.Designer.cs">
+      <DependentUpon>AdminSide_UserReport2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewRow.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator.Designer.cs">
+      <DependentUpon>Administrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeDetails_ComparisonPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeDetails_ComparisonPanel.Designer.cs">
+      <DependentUpon>SeeDetails_ComparisonPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSide_Billing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSide_Billing.Designer.cs">
+      <DependentUpon>UserSide_Billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSide_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSide_Dashboard.Designer.cs">
+      <DependentUpon>UserSide_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSide_SendConcerrns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSide_SendConcerrns.Designer.cs">
+      <DependentUpon>UserSide_SendConcerrns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSide_Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSide_Settings.Designer.cs">
+      <DependentUpon>UserSide_Settings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administrator Dashboard.resx">
+      <DependentUpon>Administrator Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_AdvancePayment.resx">
+      <DependentUpon>AdminSide_AdvancePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_Billing.resx">
+      <DependentUpon>AdminSide_Billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_Billing1.resx">
+      <DependentUpon>AdminSide_Billing1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_Billing2.resx">
+      <DependentUpon>AdminSide_Billing2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_Complaints.resx">
+      <DependentUpon>AdminSide_Complaints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_DailyReport.resx">
+      <DependentUpon>AdminSide_DailyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_DailyReport1.resx">
+      <DependentUpon>AdminSide_DailyReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_Dashboard.resx">
+      <DependentUpon>AdminSide_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_ManageUsers.resx">
+      <DependentUpon>AdminSide_ManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_MonthlyReport.resx">
+      <DependentUpon>AdminSide_MonthlyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_Payment.resx">
+      <DependentUpon>AdminSide_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_SendEmail.resx">
+      <DependentUpon>AdminSide_SendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_UserReport.resx">
+      <DependentUpon>AdminSide_UserReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_UserReport1.resx">
+      <DependentUpon>AdminSide_UserReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSide_UserReport2.resx">
+      <DependentUpon>AdminSide_UserReport2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator.resx">
+      <DependentUpon>Administrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeDetails_ComparisonPanel.resx">
+      <DependentUpon>SeeDetails_ComparisonPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSide_Billing.resx">
+      <DependentUpon>UserSide_Billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSide_Dashboard.resx">
+      <DependentUpon>UserSide_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSide_SendConcerrns.resx">
+      <DependentUpon>UserSide_SendConcerrns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSide_Settings.resx">
+      <DependentUpon>UserSide_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 3%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 4%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 5%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 6%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AquatricDatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AquatricDatabase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>AquatricDatabase.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\Asset 53%402x.png" />
+    <None Include="Resources\Asset 52%402x.png" />
+    <None Include="Resources\box%402x.png" />
+    <None Include="Resources\Asset 49%402x.png" />
+    <None Include="Resources\Asset 48%402x.png" />
+    <None Include="Resources\Asset 47%402x.png" />
+    <None Include="Resources\Asset 45%402x.png" />
+    <None Include="Resources\Asset 44%402x.png" />
+    <None Include="Resources\Asset 43%402x.png" />
+    <None Include="Resources\Asset 421%402x.png" />
+    <None Include="Resources\Asset 3%402x1.png" />
+    <None Include="Resources\Asset 25%402x1.png" />
+    <None Include="Resources\Asset 41%402x.png" />
+    <None Include="Resources\Asset 40%402x.png" />
+    <None Include="Resources\Asset 39%402x.png" />
+    <None Include="Resources\Asset 38%402x2.png" />
+    <None Include="Resources\Asset 38%402x1.png" />
+    <None Include="Resources\Asset 38%402x.png" />
+    <None Include="Resources\pass_off1.png" />
+    <None Include="Resources\pass_on1.png" />
+    <None Include="Resources\Asset 321.png" />
+    <None Include="Resources\Asset 331.png" />
+    <None Include="Resources\Asset 341.png" />
+    <None Include="Resources\Asset 351.png" />
+    <None Include="Resources\Asset 31%401x1.png" />
+    <None Include="Resources\Asset 31%401x.png" />
+    <None Include="Resources\Asset 30%401x.png" />
+    <None Include="Resources\Asset 33.png" />
+    <None Include="Resources\Asset 29.png" />
+    <None Include="Resources\Asset 29%401x1.png" />
+    <None Include="Resources\Asset 29%401x.png" />
+    <None Include="Resources\Asset 29%401x.bmp" />
+    <None Include="Resources\Asset 27%402x.png" />
+    <None Include="Resources\Asset 26%402x.png" />
+    <None Include="Resources\Asset 25%402x.png" />
+    <None Include="Resources\Asset 24%402x.png" />
+    <None Include="Resources\Asset 23%402x.png" />
+    <None Include="Resources\Asset 22%402x.png" />
+    <None Include="Resources\Asset 20%402x.png" />
+    <None Include="Resources\Asset 19.png" />
+    <None Include="Resources\Asset 18.png" />
+    <None Include="Resources\Asset 16.png" />
+    <None Include="Resources\Asset 15.png" />
+    <None Include="Resources\Asset 17.png" />
+    <None Include="Resources\Asset 14.png" />
+    <None Include="Resources\Asset 13.png" />
+    <None Include="Resources\Asset 11.png" />
+    <None Include="Resources\Asset 12.png" />
+    <None Include="Resources\Asset 9.png" />
+    <None Include="Resources\Asset 10.png" />
+    <None Include="Resources\Asset 8.png" />
+    <None Include="Resources\Asset 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
